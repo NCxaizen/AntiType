@@ -3,6 +3,7 @@ import Quill from "quill"
 import "quill/dist/quill.snow.css"
 import { io } from "socket.io-client"
 import { useParams } from "react-router-dom"
+import logo from "./antiTypelogo.jpg"
 
 const SAVE_INTERVAL_MS = 2000
 const TOOLBAR_OPTIONS = [
@@ -95,5 +96,5 @@ export default function TextEditor() {
     q.setText("Loading...")
     setQuill(q)
   }, [])
-  return <div className="container" ref={wrapperRef}></div>
+  return (<div><div className="logoBar"><img src={logo} alt="logo" /><h2>ANTiType</h2></div><div className="container" ref={wrapperRef}></div></div>)
 }
