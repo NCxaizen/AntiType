@@ -18,3 +18,7 @@ $npm install
 then,
 $npm run dev Start
 
+# Contributor list
+https://github.com/NCxaizen and 
+https://github.com/enchantingvibeson
+
